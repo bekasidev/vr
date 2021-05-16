@@ -6,7 +6,9 @@
 I used A-Frame, A-Frame Is A web framework for building virtual reality experiences, A-Frame handles the 3D and WebVR boilerplate required to get running across platforms including mobile, desktop, Vive, and Rift.
 
 # 3D Model
-You can download and use 3D models or object from anywhere or create your own with Blender. For this repo, I created my own model based on DTS Kominfo Logo with MagicaVoxel, you can watch tutorial on my youtube channel here:
+You can download and use 3D models or object from anywhere or create your own with Blender. For this repo, I created my own 3D model based on BekasiDev Logo with MagicaVoxel.
+
+This BekasiDev logo vector and raster image also created by me. You can watch tutorial on my youtube channel here for create 3D model:
 
 - [10 Menit Membuat Logo 3D (Digital Talent Scholarship)](https://www.youtube.com/watch?v=0GfNYFcDjMU&t=6s)
 - [Membuat rumah dengan MagicaVoxel](https://www.youtube.com/watch?v=nbfeWj46R3c)
