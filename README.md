@@ -8,6 +8,8 @@ I used A-Frame, A-Frame Is A web framework for building virtual reality experien
 # 3D Model
 You can download and use 3D models or object from anywhere or create your own with Blender. For this repo, I created my own 3D model based on BekasiDev Logo with MagicaVoxel.
 
+<img src="https://raw.githubusercontent.com/MaksumRifai/voxelar/master/ss-mv-bekdev.jpg">
+
 This BekasiDev logo vector and raster image also created by me. You can watch tutorial on my youtube channel here for create 3D model:
 
 - [10 Menit Membuat Logo 3D (Digital Talent Scholarship)](https://www.youtube.com/watch?v=0GfNYFcDjMU&t=6s)
@@ -104,6 +106,7 @@ Use green button above and click "Download Zip" or simply click [here](https://g
 ```
 
 In case you want to use your own models, simply replace the [.obj .mtl .png](https://en.m.wikipedia.org/wiki/Wavefront_.obj_file) files with yours. Don't forget to export your MagicaVoxel or Blender project properly.
+
 You can refer to [A-Frame docs](https://aframe.io/docs/1.0.0/introduction/) to know everything about content and customization. You can add geometries, 3D models, videos, images. And you can customize their position, scale, rotation and so on.
 
 For better and faster development you can use [Spck Code/Git Editor](http://play.google.com/store/apps/details?id=io.spck) for Android, I mainly use this Way.
