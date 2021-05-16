@@ -1,6 +1,6 @@
 # Create Your Own Web Virtual Reality
 
-<a href="https://github.com/MaksumRifai/dh-vr/blob/master/dh-preview.jpg"><img src="preview.jpg"></a>
+<a href="https://raw.githubusercontent.com/Bekasi-Dev-Community/vr/main/preview.jpg"><img src="preview.jpg"></a>
 
 # Virtual Reality
 I used A-Frame, A-Frame Is A web framework for building virtual reality experiences, A-Frame handles the 3D and WebVR boilerplate required to get running across platforms including mobile, desktop, Vive, and Rift.
@@ -16,20 +16,19 @@ You can download and use 3D models or object from anywhere or create your own wi
 
 # Live and Preview
 ## Preview
-<a href="https://github.com/MaksumRifai/dh-vr/blob/master/dh-preview.jpg"><img src="https://raw.githubusercontent.com/MaksumRifai/dh-vr/master/dh-preview.jpg"></a>
+<a href="https://raw.githubusercontent.com/Bekasi-Dev-Community/vr/main/preview.jpg"><img src="preview.jpg"></a>
 ## Live
-- https://desainerhub.com/vr
-- https://maksumrifai.github.io/dh-vr/
+- https://bekasidev.org/vr
 
 # How to use this template
 ## Clonning
 Run the following command to clone this template to your local directory:
 ```
-$ git clone https://github.com/MaksumRifai/dh-vr.git
+$ git clone https://github.com/Bekasi-Dev-Community/vr.git
 
 ```
 ## Download
-Use green button above and click "Download Zip" or simply click [here](https://github.com/MaksumRifai/dh-vr/archive/master.zip)
+Use green button above and click "Download Zip" or simply click [here](https://github.com/Bekasi-Dev-Community/vr/archive/refs/heads/main.zip)
 ## Customizing
 
 ```
@@ -38,8 +37,8 @@ Use green button above and click "Download Zip" or simply click [here](https://g
 
 <head>
  <meta charset="utf-8">
- <title>DesainerHub - VR Maksum Rifai</title>
- <meta name="description" content="DesainerHub - Maksum Rifai">
+ <title>BekasiDev - VR</title>
+ <meta name="description" content="BekasiDev - Virtual Reality">
  <!--Aframe Core, not the latest release but most stable for this project-->
  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
  <!--Aframe environment, template, layout and event component, you can remove it if not used -->
@@ -54,8 +53,8 @@ Use green button above and click "Download Zip" or simply click [here](https://g
   <!--Load assets Object 3D, Preserve all your assets below before placing it to the scene (recommended)-->
   <a-assets>
    <!--Always Asign ID to assets item for using-->
-   <a-asset-item id="dh-obj" src="dh.obj"></a-asset-item>
-   <a-asset-item id="dh-mtl" src="dh.mtl"></a-asset-item>
+   <a-asset-item id="bekdev-obj" src="https://raw.githubusercontent.com/MaksumRifai/voxelar/master/bekdev.obj"></a-asset-item>
+   <a-asset-item id="bekdev-mtl" src="https://raw.githubusercontent.com/MaksumRifai/voxelar/master/bekdev.mtl"></a-asset-item>
      <script id="plane" type="text/html">
     <a-entity class="link"
       geometry="primitive: plane; height: 0.5; width: 0.5"
@@ -67,20 +66,20 @@ Use green button above and click "Download Zip" or simply click [here](https://g
     </script>
     <audio id="click-sound" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
     <!-- Images and URLs. -->
-    <a-link id="home" href="https://desainerhub.com" target="_blank"></a-link>
-    <img id="home-thumb" src="home.jpg">
-    <a-link id="shop" href="https://desainerhub.com/shop" target="_blank"></a-link>
-    <img id="shop-thumb" src="shop.jpg">
-    <a-link id="store" href="https://desainerhub.com/store" target="_blank"></a-link>
-    <img id="store-thumb" src="store.jpg">
+    <a-link id="satu" href="https://bekasidev.org" target="_blank"></a-link>
+    <img id="satu-thumb" src="satu.jpg">
+    <a-link id="dua" href="https://bekasidev.org/blog" target="_blank"></a-link>
+    <img id="dua-thumb" src="dua.jpg">
+    <a-link id="tiga" href="https://bekasidev.org/charity" target="_blank"></a-link>
+    <img id="tiga-thumb" src="tiga.jpg">
   </a-assets>
   <!--End of All Assets-->
   <!--Using Assets Above with assets ID, add desire position/scale/rotation and simple Animation-->
-  <a-entity rotation="0 0 0" scale="1 1 1" position="6 0 -40" obj-model="obj: #dh-obj; mtl: #dh-mtl"
+  <a-entity rotation="0 0 0" scale="0.5 0.5 0.5" position="6 0 -40" obj-model="obj: #bekdev-obj; mtl: #bekdev-mtl"
   animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
-  animation__2="property: position; to: -10 2 -30; loop: true; dur: 10000"></a-entity>
+  animation__2="property: position; to: -10 2 -10; loop: true; dur: 10000"></a-entity>
   <!--Add Environtment Forest Preset, alternatively use <a-plan> and <a-sky> for custom ground and sky-->
-  <a-entity environment="preset: arches; dressingAmount: 10"></a-entity>
+  <a-entity environment="preset: forest; dressingAmount: 10"></a-entity>
   <!--Add Camera-->
   <a-camera>
     <a-cursor
@@ -91,14 +90,15 @@ Use green button above and click "Download Zip" or simply click [here](https://g
   </a-camera>
   <!--Add links and tumbnails-->
   <a-entity id="links" layout="type: line; margin: 1" position="-1 1.5 -2">
-    <a-entity template="src: #plane" data-src="#home" data-thumb="#home-thumb"></a-entity>
-    <a-entity template="src: #plane" data-src="#shop" data-thumb="#shop-thumb"></a-entity>
-    <a-entity template="src: #plane" data-src="#store" data-thumb="#store-thumb"></a-entity>
+    <a-entity template="src: #plane" data-src="#satu" data-thumb="#satu-thumb"></a-entity>
+    <a-entity template="src: #plane" data-src="#dua" data-thumb="#dua-thumb"></a-entity>
+    <a-entity template="src: #plane" data-src="#tiga" data-thumb="#tiga-thumb"></a-entity>
   </a-entity>
   <!--End of scene, add everything you want to show above this line-->
  </a-scene>
 </body>
 </html>
+
 ```
 
 In case you want to use your own models, simply replace the [.obj .mtl .png](https://en.m.wikipedia.org/wiki/Wavefront_.obj_file) files with yours. Don't forget to export your MagicaVoxel or Blender project properly.
@@ -137,13 +137,7 @@ A free lightweight GPU-based voxel art editor and interactive path tracing rende
 - [Publishing Voxel Designs from MagicaVoxel to Sketchfab](https://blog.sketchfab.com/publishing-voxel-designs-from-magicavoxel-to-sketchfab/)
 - [Building with MagicaVoxel and export to A-Frame (WebVR framework)](https://aframe.io/docs/0.3.0/guides/building-with-magicavoxel.html)
 - [Script for animating MagicaVoxel rendering](http://drinkdecaf.com/magicavoxel_animate)
-
-# Digital Talent Scholarship (DTS) Kominfo
-
-## Copyright Notice & Disclaimer
-
-All product (DTS) and company/entity names (Kominfo) are trademarks™ or registered® trademarks of their respective holders. Use of them does not imply any affiliation with or endorsement by them.
-Please refer to DTS [official website](https://digitalent.kominfo.go.id) for more Information.
+- [Web Augumented Reality (WebAR) by Maksum Rifai](https://dev.to/maksumrifai/voxelart-web-augumented-reality-webar-2man)
 
 ### Support Me
 <a href="https://www.paypal.me/maksumrifai"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSRU16oC9ndfwmD5a14Df0X7B96ummOHmQGsg&usqp=CAU" width="200"></a>
