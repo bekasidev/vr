@@ -19,8 +19,8 @@
   <!--Load assets Object 3D, Preserve all your assets below before placing it to the scene (recommended)-->
   <a-assets>
    <!--Always Asign ID to assets item for using-->
-   <a-asset-item id="dh-obj" src="dh.obj"></a-asset-item>
-   <a-asset-item id="dh-mtl" src="dh.mtl"></a-asset-item>
+   <a-asset-item id="bekdev-obj" src="https://raw.githubusercontent.com/MaksumRifai/voxelar/master/bekdev.obj"></a-asset-item>
+   <a-asset-item id="bekdev-mtl" src="https://raw.githubusercontent.com/MaksumRifai/voxelar/master/bekdev.mtl"></a-asset-item>
      <script id="plane" type="text/html">
     <a-entity class="link"
       geometry="primitive: plane; height: 0.5; width: 0.5"
@@ -32,20 +32,20 @@
     </script>
     <audio id="click-sound" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
     <!-- Images and URLs. -->
-    <a-link id="home" href="https://desainerhub.com" target="_blank"></a-link>
-    <img id="home-thumb" src="home.jpg">
-    <a-link id="shop" href="https://desainerhub.com/shop" target="_blank"></a-link>
-    <img id="shop-thumb" src="shop.jpg">
-    <a-link id="store" href="https://desainerhub.com/store" target="_blank"></a-link>
-    <img id="store-thumb" src="store.jpg">
+    <a-link id="satu" href="https://bekasidev.org" target="_blank"></a-link>
+    <img id="satu-thumb" src="satu.jpg">
+    <a-link id="dua" href="https://bekasidev.org/blog" target="_blank"></a-link>
+    <img id="dua-thumb" src="dua.jpg">
+    <a-link id="tiga" href="https://bekasidev.org/charity" target="_blank"></a-link>
+    <img id="tiga-thumb" src="tiga.jpg">
   </a-assets>
   <!--End of All Assets-->
   <!--Using Assets Above with assets ID, add desire position/scale/rotation and simple Animation-->
-  <a-entity rotation="0 0 0" scale="1 1 1" position="6 0 -40" obj-model="obj: #dh-obj; mtl: #dh-mtl"
+  <a-entity rotation="0 0 0" scale="0.5 0.5 0.5" position="6 0 -40" obj-model="obj: #bekdev-obj; mtl: #bekdev-mtl"
   animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
-  animation__2="property: position; to: -10 2 -30; loop: true; dur: 10000"></a-entity>
+  animation__2="property: position; to: -10 2 -10; loop: true; dur: 10000"></a-entity>
   <!--Add Environtment Forest Preset, alternatively use <a-plan> and <a-sky> for custom ground and sky-->
-  <a-entity environment="preset: arches; dressingAmount: 10"></a-entity>
+  <a-entity environment="preset: forest; dressingAmount: 10"></a-entity>
   <!--Add Camera-->
   <a-camera>
     <a-cursor
@@ -56,9 +56,9 @@
   </a-camera>
   <!--Add links and tumbnails-->
   <a-entity id="links" layout="type: line; margin: 1" position="-1 1.5 -2">
-    <a-entity template="src: #plane" data-src="#home" data-thumb="#home-thumb"></a-entity>
-    <a-entity template="src: #plane" data-src="#shop" data-thumb="#shop-thumb"></a-entity>
-    <a-entity template="src: #plane" data-src="#store" data-thumb="#store-thumb"></a-entity>
+    <a-entity template="src: #plane" data-src="#satu" data-thumb="#satu-thumb"></a-entity>
+    <a-entity template="src: #plane" data-src="#dua" data-thumb="#dua-thumb"></a-entity>
+    <a-entity template="src: #plane" data-src="#tiga" data-thumb="#tiga-thumb"></a-entity>
   </a-entity>
   <!--End of scene, add everything you want to show above this line-->
  </a-scene>
